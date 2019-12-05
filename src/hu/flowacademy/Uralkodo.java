@@ -3,8 +3,8 @@ package hu.flowacademy;
 public class Uralkodo implements EroErzekeny, Sith{
     private double gonoszsag;
 
-    public Uralkodo() {
-        this.gonoszsag = 100;
+    public Uralkodo(int gonoszsag) {
+        this.gonoszsag = gonoszsag;
     }
 
     @Override
@@ -27,8 +27,6 @@ public class Uralkodo implements EroErzekeny, Sith{
 
     @Override
     public String toString() {
-        return "Uralkodo{" +
-                "gonoszsag=" + gonoszsag +
-                '}';
+        return "Uralkodo gonoszsága: " + gonoszsag;
     }
 }

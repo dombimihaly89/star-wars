@@ -1,0 +1,4 @@
+Anakin 3 300 true
+Anakin 4 200 false
+Uralkodo 5 100 true
+Uralkodo 3 1000 false
