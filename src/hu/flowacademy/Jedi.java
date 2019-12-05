@@ -11,7 +11,18 @@ public abstract class Jedi implements EroErzekeny {
 
     public abstract boolean megtermetiAzEgyensulyt();
 
+    @Override
+    public double mekkoraAzEreje() {
+        return ero;
+    }
 
+    @Override
+    public boolean legyoziE(EroErzekeny eroerzekeny) {
+        if (atallhatE && this.mekkoraAzEreje() > eroerzekeny.mekkoraAzEreje()) {
+            return true;
+        }
+        return false;
+    }
 
     public double getEro() {
         return ero;
